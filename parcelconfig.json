@@ -1,0 +1,109 @@
+{
+    "extends": [
+        "@parcel/config-default"
+    ],
+    "resolvers": [
+        "...",
+        "@parcel/resolver-default",
+        "@parcel/resolver-alias",
+        "@parcel/resolver-http",
+        "@parcel/resolver-https",
+        "@parcel/resolver-file",
+        "@parcel/resolver-url",
+        "@parcel/resolver-asset",
+        "@parcel/resolver-asset-url",
+        "@parcel/resolver-asset-inline"
+    ],
+    "bundler": "@parcel/bundler-default",
+    "runtimes": "@parcel/runtime-default",
+    "namers": [
+        "...",
+        "@parcel/namer-default",
+        "@parcel/namer-js",
+        "@parcel/namer-minify",
+        "@parcel/namer-numeric",
+        "@parcel/namer-raw"
+    ],
+    "packagers": {
+        "*.{jpg,png}": [
+            "@parcel/packager-imagemin"
+        ],
+        "*.js": [
+            "@parcel/packager-esbuild"
+        ],
+        "*.css": [
+            "@parcel/packager-postcss"
+        ],
+        "*.html": [
+            "@parcel/packager-html"
+        ],
+        "*.json": [
+            "@parcel/packager-json"
+        ],
+        "*.wasm": [
+            "@parcel/packager-wasm"
+        ],
+        "*.webmanifest": [
+            "@parcel/packager-webmanifest"
+        ],
+        "*.md": [
+            "@parcel/packager-text"
+        ],
+        "*.txt": [
+            "@parcel/packager-text"
+        ]
+    },
+    "optimizers": {
+        "*.js": [
+            "@parcel/optimizer-esbuild"
+        ]
+    },
+    "compressors": {
+        "*.{js,html,css}": [
+            "...",
+            "@parcel/compressor-gzip",
+            "@parcel/compressor-brotli"
+        ]
+    },
+    "reporters": [
+        "...",
+        "@parcel/reporter-bundle-analyzer"
+    ],
+    "transformers": {
+        "*.svg": [
+            "...",
+            "@parcel/transformer-svg"
+        ],
+        "arraybuffer:*": [
+            "...",
+            "parcel-transformer-arraybuffer"
+        ],
+        "*.{ts,tsx}": [
+            "@parcel/transformer-typescript-tsc"
+        ],
+        "*.js": [
+            "@parcel/transformer-js"
+        ],
+        "*.css": [
+            "@parcel/transformer-postcss"
+        ],
+        "*.html": [
+            "@parcel/transformer-html"
+        ],
+        "*.json": [
+            "@parcel/transformer-json"
+        ],
+        "*.wasm": [
+            "@parcel/transformer-wasm"
+        ],
+        "*.webmanifest": [
+            "@parcel/transformer-webmanifest"
+        ],
+        "*.md": [
+            "@parcel/transformer-markdown"
+        ],
+        "*.txt": [
+            "@parcel/transformer-text"
+        ]
+    }
+}

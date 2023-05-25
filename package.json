@@ -1,0 +1,78 @@
+{
+  "name": "codefolio",
+  "version": "1.0.0",
+  "description": "CodeFolio",
+  "source": "src/index.html",
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve",
+    "watch": "parcel watch",
+    "build": "parcel build"
+  },
+  "repository": "git+https://github.com/jimbrig/codefolio.git",
+  "author": "Jimmy Briggs <jimmy.briggs@jimbrig.com> (https://github.com/jimbrig)",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/jimbrig/codefolio/issues"
+  },
+  "homepage": "https://github.com/jimbrig/codefolio#readme",
+  "dependencies": {
+    "@codersrank/activity": "^0.9.14",
+    "@codersrank/education": "^0.9.12",
+    "@codersrank/portfolio": "^0.9.10",
+    "@codersrank/skills-chart": "^0.9.21",
+    "@codersrank/summary": "^0.9.13",
+    "@codersrank/timeline": "^0.9.2",
+    "@codersrank/work-experience": "^0.9.8"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3",
+    "parcel-transformer-ejs": "^1.0.1",
+    "@parcel/optimizer-css": "*",
+    "@parcel/optimizer-data-url": "*",
+    "@parcel/packager-ts": "*",
+    "@parcel/resolver-glob": "*",
+    "@parcel/transformer-inline": "*",
+    "@parcel/transformer-inline-string": "*",
+    "@parcel/transformer-svg-react": "*",
+    "@parcel/transformer-typescript-types": "*",
+    "@mango-js/parcel-transformer-jsx": "^1.0.0-alpha.14",
+    "eslint": "^8.38.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jest": "^27.2.1",
+    "eslint-plugin-jsdoc": "^40.3.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-monorepo": "^0.3.2",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-rulesdir": "^0.2.2",
+    "postcss": "^7.0.0",
+    "postcss-calc": "^6.0.0",
+    "postcss-custom-properties": "6.3.1",
+    "postcss-dir-pseudo-class": "^5.0.0",
+    "postcss-focus-ring": "^1.0.0",
+    "postcss-functions": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-inherit": "^4.1.0",
+    "postcss-logical": "^4.0.0",
+    "postcss-modules": "^3.2.2",
+    "postcss-nested": "^4.1.2",
+    "postcss-svg": "^3.0.0",
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-proposal-decorators": "^7.12.1",
+    "@babel/plugin-syntax-decorators": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/preset-typescript": "^7.12.7",
+    "@babel/register": "^7.12.10"
+  }
+}

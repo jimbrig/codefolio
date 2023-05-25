@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James ("Jimmy") Briggs - Software Engineer</title>
+  <!-- Link our CSS stylesheet -->
+  <link rel="stylesheet" href="main.css">
+  <!-- Favicon -->
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <main>
+    <header>
+      <!-- Header content with avatar and basic info -->
+      <img src="img/avatar.jpg" alt="Jimmy Briggs" class="avatar">
+      <div class="header-content">
+        <h1>James ("Jimmy") Briggs</h1>
+        <h2>Software Engineer | Developer</h2>
+        <hr>
+        <div class="subtitle">
+          Software Architect <span class="dot">•</span>
+          Backend Developer <span class="dot">•</span>
+          R, Python, and SQL Enthusiast <span class="dot">•</span>
+          Cloud Architecture <span class="dot">•</span>
+          Data Science <span class="dot">•</span>
+        </div>
+        <div class="location">
+          Atlanta, Georgia, USA <span role="img" aria-label="USA">🇺🇸</span>
+        </div>
+        <hr>
+        <div class="contacts">
+          <a href="https://github.com/jimbrig" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="img/logo_github.svg" alt="GitHub" />
+            </span>
+            <span>GitHub</span>
+          </a>
+          <a href="https://profile.codersrank.io/user/jimbrig" target="_blank" rel="noopener noreferrer">
+            <span class="icon">
+              <img src="img/logo_cr.svg" alt="CodersRank" />
+            </span>
+            <span>CodersRank</span>
+          </a>
+    </header>
+    <section>
+      <h2>My Coding Activity & Stats</h2>
+
+      <!-- Summary widget -->
+      <codersrank-summary username="jimbrig" show-header="false"></codersrank-summary>
+
+      <!-- Activity widget -->
+      <codersrank-activity username="jimbrig" legend="false" labels tooltip step="5"></codersrank-activity>
+
+      <!-- Skills chart widget -->
+      <codersrank-skills-chart username="jimbrig" labels tooltip skills="R,Python,SQL,JavaScript,CSS,HTML"
+        svg-width="1120" svg-height="400"></codersrank-skills-chart>
+    </section>
+
+    <section>
+      <h2>Recent Projects</h2>
+
+      <!-- Portfolio widget -->
+      <codersrank-portfolio username="jimbrig" grid company="false"></codersrank-portfolio>
+    </section>
+    <section>
+      <h2>Work Experience & Education</h2>
+
+      <!-- Work experience widget -->
+      <codersrank-work-experience username="jimbrig" logos></codersrank-work-experience>
+
+      <!-- Education widget -->
+      <codersrank-education username="jimbrig"></codersrank-education>
+    </section>
+
+    <footer>
+      <!-- Generic footer copy -->
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/@codersrank/summary/codersrank-summary.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/activity/codersrank-activity.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/skills-chart/codersrank-skills-chart.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/portfolio/codersrank-portfolio.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/work-experience/codersrank-work-experience.min.js"></script>
+  <script src="https://unpkg.com/@codersrank/education/codersrank-education.min.js"></script>
+</body>
+
+</html>

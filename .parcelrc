@@ -1,0 +1,55 @@
+{
+  "extends": [
+    "@parcel/config-default"
+  ],
+  "resolvers": [
+    "@parcel/resolver-glob",
+    "..."
+  ],
+  "namers": [
+    "..."
+  ],
+  "optimizers": {
+    "*.html": [
+      "..."
+    ],
+    "*.css": [
+      "@parcel/optimizer-css"
+    ]
+  },
+  "packagers": {
+    "*.html": "@parcel/packager-html",
+    "*.js": "@parcel/packager-js",
+    "*.css": "@parcel/packager-css"
+  },
+  "transformers": {
+    "*.js": [
+      "@parcel/transformer-js"
+    ],
+    "*.{ts,tsx}": [
+      "@parcel/transformer-typescript"
+    ],
+    "*.css": [
+      "...",
+      "@parcel/transformer-postcss"
+    ],
+    "*.{scss,sass}": [
+      "@parcel/transformer-sass"
+    ],
+    "*.html": [
+      "@parcel/transformer-html"
+    ],
+    "*.json": [
+      "@parcel/transformer-json"
+    ],
+    "*.svg": [
+      "@parcel/transformer-svg"
+    ],
+    "*.md": [
+      "@parcel/transformer-markdown"
+    ],
+    "*.{js,mjs,jsm,jsx,es6,cjs,ts,tsx}": [
+      "@parcel/transformer-js"
+    ]
+  }
+}
